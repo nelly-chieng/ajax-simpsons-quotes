@@ -21,8 +21,8 @@
       <h1 class="title">Ajax Simpson quotes</h1>
       <p>Reload for another quotes!</p>
 
-      <div class="content" id="simpson-quotes">
-      </div>
+      <div class="content" id="simpson-quotes"></div>
+      <button id="button">Change character</button>
     </div>
 
   </section>
@@ -49,6 +49,13 @@
   }
   
   fetchSimpsonJSON();
+
+  const myBtn = document.querySelector("#button");
+  myBtn.addEventListener("click", function(){
+    fetchSimpsonJSON()
+  });
+
+
   </script>
 </body>
 
